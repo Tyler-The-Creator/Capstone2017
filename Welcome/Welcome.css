@@ -54,3 +54,7 @@ p {
     background: #C0D6DF;
     color: #FFF;
 }
+
+a:hover {
+    text-decoration: none;
+}
