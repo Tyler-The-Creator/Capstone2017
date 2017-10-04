@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Answer Quiz</title>
+     <link href="Answer.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Choose one answer from below</h2>
+  <p>After clicking an answer, Click on "Done"</p>
+  <a href="StudentMenu.html" <span onclick="newElement()" class="addBtn">Done</span></a>
+</div>
+
+<ul id="myUL">
+  <li>Option1</li>
+  <li>Option2</li>
+  <li>Option3</li>
+  <li>Option4</li>
+</ul>
+
+<script>
+//Add method to save answer to database db
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+
+
+/* Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}*/
+
+</script>
+
+</body>
+</html>

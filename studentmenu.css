@@ -1,0 +1,196 @@
+body {
+	background-image:url("img/img1.gif");
+	opacity: 0.9;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	margin-left: 10%;
+}
+
+div.logo {
+	width:278px;
+	margin-top: 20px;
+	text-indent: 10px;
+	font-family:mofo;
+	font-size: 49px;
+	color: white;
+	word-spacing: 80px;
+}
+
+
+.sidenav {
+	height: 100%;
+	width: 20%;
+	position:fixed;
+	background-color: #010e23;
+	outline-width: 1px;
+	outline-style: outset;
+	outline-color: blue;
+	text-align: center;
+	text-shadow: 5px 5px black;
+}
+
+
+.header {
+	font-family:mofo;
+	font-size: 2.5cm;
+	text-align: center;
+	text-indent: 15cm;
+	color: #d83508;
+	opacity: 1;
+	height: 20%;
+	width: 100%;
+	position:fixed;
+	text-shadow:8px 8px black;
+}
+
+.sidenav .header {
+	height: 20%;
+	width: 19%;
+	background-image:url("img/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center top;
+	font-family: mofo;
+}
+
+.sidenav .form-container {
+	height: 80%;
+	text-shadow: 0 0 black;
+	color: white;
+}
+
+
+div.radio {
+	text-indent: left;
+}
+
+
+@font-face {
+	font-family: "mofo";
+	src:url("badmofo/BadMofo.ttf");
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.overlay-content a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.submitBtn{
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+
+}
+
+.sidepop {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #010e23; /*#ed704e;*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 60px;
+    outline-width: 1px;
+	outline-style: outset;
+	outline-color: blue;
+}
+
+.sidepop a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+h2{
+	 padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.form{
+	 padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidepop a:hover {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.sidepop .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidepop {padding-top: 15px;}
+  .sidepop a {font-size: 18px;}
+}

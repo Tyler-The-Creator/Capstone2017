@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <link href="welcome.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<h2>Welcome to Lec-Game Lite! </h2>
+
+<div id="mySidenav" class="sidenav">
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="../php/login.php" method="post">
+
+        <label for="radio">Please indicate whether you are a student or a lecturer</label>
+        <select id="radio" name="table">
+            <option value="Lecturers">Lecturer</option>
+            <option value="Students">Student</option>
+        </select>
+
+
+        <label for="userid">User ID (UPPER CASE)</label>
+        <input type="text" id="userid" name="userid" placeholder="staffNo/studentNo..">
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" placeholder="Password">
+
+    
+        <input type="submit" value="Submit">
+  </form>
+</div>
+
+</div> <!--for side nav -->
+
+
+<div class="imageContainer">
+  <img src="league_of_legends_platinum.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Welcome to Lec-Game Lite!</div>
+  </div>
+</div>
+
+</body>
+</html>

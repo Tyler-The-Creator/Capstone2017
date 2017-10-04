@@ -1,0 +1,50 @@
+<!-- CHANGE ALL TABLE VAR NAMES AND PHP VAR NAMES!!! JUST TEMPORARY NAMES-->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Leaderboard</title>
+    </head>
+    <body>
+      <?php
+      $username = "database-username";
+      $password = "database-password";
+      $host = "localhost";
+
+      $connector = mysql_connect($host,$username,$password)
+          or die("Unable to connect");
+        echo "Connections are made successfully::";
+      $selected = mysql_select_db("test_db", $connector)
+        or die("Unable to connect");
+
+      //execute the SQL query and return records
+      $result = mysql_query("SELECT * FROM table_one ");
+      ?>
+
+      <div style="overflow-x:auto;">
+      <table border="2" style= "background-color: #84ed86; color: #761a9b; margin: 0 auto;" >
+      <thead>
+        <tr>
+          <th>Student Number</th>
+          <th>Attendance</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+          while( $row = mysql_fetch_assoc( $result ) ){
+           echo
+            "<tr>
+              <td>{$row\['student_id'\]}</td>
+              <td>{$row\['std_attendance'\]}</td>
+              <td>{$row\['std_points'\]}</td>
+            </tr>\n";
+          }
+        ?>
+      </tbody>
+    </table>
+    </div>
+     <?php mysql_close($connector); ?>
+    </body>
+    </html>

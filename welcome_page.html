@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Hello World</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<style>
+		smol {
+			font-size: small;
+			color: #ed704e;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+		CSC3002S
+		</div>
+	</div>
+	
+
+	<div class="sidenav">
+		<div class="header"> </div>
+		<div class="logo">Lec Game Lite</div>
+		<div class="form-container">
+			<br><br>
+			<form action="" method="post">
+				<div class="radio">
+					<smol>Please indicate whether you are a student/lecturer</smol><br>
+			    	<label><input type="radio" name="table" value="Students" checked>Student</label><br>
+			    	<label><input type="radio" name="table" value="Lecturers"> Lecturer<br> </label>
+			  	</div>
+
+			  	<div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				    <input id="userid" type="text" class="form-control" name="userid" placeholder="Email">
+			    </div>
+			    <br>
+			  	<div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+			  	</div>
+			  	<br><br>
+			  	<button type="submit" class="btn btn-default">Log In</button>
+			</form>
+
+		</div>
+	</div>
+
+</body>
+
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
